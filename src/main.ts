@@ -8,13 +8,14 @@ let dbOptions: ConnectionOptions = {
         port: 3306,
         username: 'root',
         password: '',
-        database: 'test'
+        database: 'csgostars'
     },
     entities: [
+        __dirname + "/EntityBase.js",
         __dirname + "/FooEntity.js",
     ],
 
-    autoSchemaSync: true
+    //autoSchemaSync: true
 };
 
 (async () => {
